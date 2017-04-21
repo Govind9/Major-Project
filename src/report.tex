@@ -18,12 +18,14 @@
 \usepackage{placeins}
 \let\Oldsubsection\subsection
 \renewcommand{\subsection}{\FloatBarrier\Oldsubsection}
+\let\Oldsection\section
+\renewcommand{\section}{\FloatBarrier\Oldsection}
 \lhead{\tiny\bfseries Multi-Threaded Geometric Rendering}
 \usepackage[left=2.5cm, right=1.5cm, top=2.5cm, bottom=1.5cm]{geometry}
 \pagestyle{fancy}
 %\end{print}
 \margins{2.5cm}{1.5cm}{1.5cm}{1.5cm}
-\linespread{1.25}
+\linespread{1.5}
 \begin{screen}
 	\renewcommand{\encodingdefault}{T1}
  	\usepackage{setspace}
@@ -79,6 +81,9 @@
 	\newpage
 
 	\input{input/Implementation_Testing_and_Maintenance.tex}
+	\newpage
+
+	\input{input/Results_and_Discussions.tex}
 	\newpage
 
 	\input{input/Conclusions_and_Future_Scope.tex}
